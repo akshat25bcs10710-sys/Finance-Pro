@@ -1,0 +1,33 @@
+.analytics-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 992px) {
+  .analytics-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .analytics-card.wide {
+    grid-column: span 2;
+  }
+}
+
+.analytics-card {
+  padding: 1.5rem;
+}
+
+.analytics-card h3 {
+  margin-bottom: 1.5rem;
+  color: var(--text-secondary);
+}
+
+.chart-container {
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-center { text-align: center; }
+.py-4 { padding: 1rem 0; }

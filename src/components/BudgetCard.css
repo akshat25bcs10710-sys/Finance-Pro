@@ -1,0 +1,62 @@
+.budget-card {
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.bc-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.bc-header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+}
+
+.bc-total {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  font-family: 'Outfit', sans-serif;
+}
+
+.bc-progress-container {
+  margin-bottom: 0.75rem;
+}
+
+.bc-progress-bar {
+  height: 10px;
+  background: var(--bg-primary);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+}
+
+.bc-progress-fill {
+  height: 100%;
+  border-radius: var(--radius-xl);
+  transition: width 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.bc-progress-fill.good {
+  background: var(--success);
+}
+
+.bc-progress-fill.warning {
+  background: var(--warning);
+}
+
+.bc-progress-fill.danger {
+  background: var(--danger);
+  box-shadow: 0 0 10px var(--danger);
+}
+
+.bc-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
